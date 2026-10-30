@@ -14,6 +14,13 @@ upstream:
   sponsor:
   - name: DB Browser for SQLite
     url: https://www.patreon.com/db4s
+  notes:
+    type: github_release
+    repo: sqlitebrowser/sqlitebrowser
+    tag: v${VERSION}
+    transform:
+    - regex: -r\d+$
+      replace: ''
 
 release:
   branch: master
